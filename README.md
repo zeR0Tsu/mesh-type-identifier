@@ -39,6 +39,14 @@ Download the latest release ZIP and extract into your Unity project's `Packages/
 
 The plugin reads `Mesh.boneWeights` from each SkinnedMeshRenderer to determine which bone has the most influence on the mesh, then uses a weighted scoring formula (`weight / depth^2`) to select the most appropriate control bone. Full-body meshes (using >10% of skeleton bones) retain the root bone as the selection target.
 
+## Performance
+
+The hierarchy labels are designed to stay cheap even when the scene is expanded to thousands of visible objects:
+
+- **Per-object caching** — each GameObject's detection result is cached, so a repaint does an O(1) dictionary lookup + one button draw instead of re-checking components every frame.
+- **Lazy bone analysis** — the expensive `Mesh.boneWeights` scan runs only when you hover a `[S]` label (and the result is cached), not on every repaint.
+- **Targeted invalidation** — the cache is cleared per object on component changes and pruned of destroyed objects on hierarchy changes, so newly added objects are scanned individually.
+
 ## Package Structure
 
 ```

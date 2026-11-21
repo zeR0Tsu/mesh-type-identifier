@@ -1,6 +1,6 @@
 {
   "name": "com.zer0tsu.mesh-type-identifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Mesh Type Identifier",
   "description": "Automatically identify Mesh and SkinnedMesh in Unity scenes. Provides visual [M]/[S] labels in the Hierarchy, bone weight analysis, and one-click bone selection for SkinnedMeshRenderer.",
   "unity": "2019.4",

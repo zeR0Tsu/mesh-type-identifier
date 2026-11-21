@@ -6,6 +6,31 @@
   "packages": {
     "com.zer0tsu.mesh-type-identifier": {
       "versions": {
+        "1.0.1": {
+          "name": "com.zer0tsu.mesh-type-identifier",
+          "displayName": "Mesh Type Identifier",
+          "version": "1.0.1",
+          "unity": "2022.3",
+          "description": "Automatically identify Mesh and SkinnedMesh in Unity scenes. Provides visual [M]/[S] labels in the Hierarchy, bone weight analysis, and one-click bone selection for SkinnedMeshRenderer.",
+          "url": "https://github.com/zeR0Tsu/mesh-type-identifier/releases/download/v1.0.1/com.zer0tsu.mesh-type-identifier-1.0.1.zip",
+          "author": {
+            "name": "zeR0Tsu",
+            "url": "https://github.com/zeR0Tsu"
+          },
+          "vpmDependencies": {},
+          "legacyPackages": [],
+          "legacyFolders": {},
+          "legacyFiles": {},
+          "keywords": [
+            "unity",
+            "editor",
+            "mesh",
+            "skinned-mesh",
+            "vrchat",
+            "avatar"
+          ],
+          "samples": []
+        },
         "1.0.0": {
           "name": "com.zer0tsu.mesh-type-identifier",
           "displayName": "Mesh Type Identifier",
